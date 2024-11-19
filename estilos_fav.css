@@ -1,0 +1,133 @@
+:root {
+    --fuente-principal: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --fuente-secundaria: "Edu AU VIC WA NT Pre", cursive;
+    --color-fuente: #3685e6;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align:center;
+    color:var(--color-fuente);
+    font-family:var(--fuente-principal);
+    font-size: large;
+    margin: 30px;
+}
+
+h2 { 
+    font-family: var(--fuente-secundaria);
+    font-size: 60px;
+}
+
+#header { 
+    display: flex;
+    justify-content: center;
+
+
+}
+#title { 
+    font-family:var(--fuente-secundaria);
+    font-size: 70px;
+    text-align: center;
+}
+.imagen0 { 
+    height: 70px ;
+    width: auto;
+}
+.imagen1 { 
+   height: 180vh;
+   width: auto;
+   margin-top: -10vh;
+  
+}
+.biography { 
+    font-size: 25px;
+    margin-left: 30px;
+}
+#bio { 
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.discografia { 
+    text-align: left;
+    margin-left: 150px;
+    margin-top: -30px;
+    margin-bottom: 60px;
+}
+#cajas { 
+    display: flex;
+    flex-direction: row;
+}
+
+.cover-album {
+    width: 250px;
+    height: 250px;
+}
+
+.contenedor-album { 
+    text-align: center;
+    font-size: 16px;
+    margin: 15px;
+}
+.imagen3 { 
+    width: auto;
+    height: 800px;
+    grid-column: 1;
+}
+.popular0 { 
+    display: grid;
+    grid-template-columns: 5% 95%;
+    grid-template-rows: auto;
+}
+.popular1 {
+    grid-row: 1;
+    grid-column: 2;
+}
+ol { 
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: medium; 
+    }
+
+    #title {
+        font-size: 70px;
+        margin-left: 45px;
+    }
+
+    .imagen1 {
+        height: auto;
+        width: 100%; 
+        margin-top: 0; 
+    }
+    .biography { 
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    #bio {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .discografia {
+        margin: 0
+    }
+
+    #cajas {
+        flex-direction: column; 
+    }
+
+    .contenedor-album {
+        font-size: 14px;
+    }
+
+    h2 { 
+        margin-left: 30px;
+    }
+}
+
