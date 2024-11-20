@@ -89,6 +89,9 @@ h2 {
 ol { 
     list-style: none;
 }
+.spotify { 
+ width: 50%;   
+}
 
 @media (max-width: 768px) {
     body {
@@ -130,4 +133,3 @@ ol {
         margin-left: 30px;
     }
 }
-
